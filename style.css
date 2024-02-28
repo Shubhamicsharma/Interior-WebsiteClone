@@ -1,0 +1,1190 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    padding: 2rem 8rem;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    color: white;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.navbar .navbar-brand img{
+    height: 5rem;
+    scale: 2;
+}
+
+.navbar .container-fluid ul{
+    gap: 1rem;
+}
+
+
+.navbar.scrolled {
+    background-color: rgb(255, 255, 255);
+  }
+
+
+/* Home Section */
+
+
+.home{
+    
+    top: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.home .home-text{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 25%;
+    left: 58%;
+    padding: 2rem;
+}
+
+.home .home-text .home-text-line{
+    border-bottom: 0.25rem solid white;
+    /* height: 5rem; */
+    width: 5rem;
+}
+
+.home .home-text h1{
+    font-size: 4rem;
+    font-family: Garamond, serif;
+    font-weight: bolder;
+}
+
+.home .home-text h2{
+    width: 50%;
+}
+
+.home .carousel-indicators button{
+    margin-right: 1rem;
+    height: 0.65rem;
+    width: 0.65rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.home .carousel-inner .carousel-item{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0, 0.3);
+    
+}
+
+.home .carousel-inner .first-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/projects/tivoli/Tivoli_11.jpg');
+}
+
+.home .carousel-inner .second-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/_BHS6040_76.jpg');
+}
+
+.home .carousel-inner .third-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/_T8_9144.jpg');
+}
+
+.home .carousel-inner .fourth-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/bhs01186_25.jpg');
+}
+
+.home .carousel-inner .fifth-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/bHS03459.jpg');
+}
+
+.home .carousel-inner .sixth-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/i_Land_.jpg');
+}
+
+.home .carousel-inner .seventh-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/orchid_.jpg');
+}
+
+.home .carousel-inner .eight-slide{
+    background-image: url('https://www.hcdesigns.in/assets/images/home/banner/orchid_9.jpg');
+}
+
+
+/* -------------------------------- Section 2 ------------------------------------------- */
+
+.about{
+    padding: 4rem;
+}
+
+.about .black-bg{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem 5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.about .black-bg .text-div{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 13.5rem;
+}
+
+.about .black-bg .vertical-line{
+    height: 3rem;
+    border-right: 3px solid white;
+    width: 0;
+}
+
+.about .black-bg .icons-div{
+    font-family: baskerville, serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.about .black-bg .icons-div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .black-bg .icons-div div img{
+    width: 5rem;
+}
+
+
+/* --------------------------------------------- Projects Section --------------------------------------------- */
+
+.projects{
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.projects-inner{
+    background-color: #F3F5F9;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-inner .our-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects-inner .vertical-line{
+    height: 3rem;
+    width: 0;
+    border-right: 2px solid #E8E8EC;
+}
+
+.projects-inner .projects-container{
+    gap: 1rem;
+}
+
+.projects-inner .projects-container .project-details{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.projects-inner .projects-container .project-details .project-image-container{
+    width: 100%;
+    height: 37.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+
+.projects-inner .projects-container .project-details img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    transition: transform 0.3s ease;
+}
+
+.projects-inner .projects-container .project-details .project-image-container:hover img {
+    transform: scale(1.1);
+  }
+
+.projects-inner .projects-container .project-details h5{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.projects-inner .projects-container .project-details span{
+    padding: 1rem;
+}
+
+.projects-inner a{
+    color: #666666;
+    margin-top: 2rem;
+}
+
+
+/* -------------------------------Project Video---------------------------------------------- */
+
+.project-video{
+    padding: 0 4rem 4rem 4rem;
+}
+
+.project-video .video-container{
+    width: 100%;
+    position: relative;
+    height: 37.5rem;
+    overflow: hidden;
+}
+
+.project-video .video-container .thumbnail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.project-video .video-container .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5rem;
+    width: 5rem;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.project-video .video-container:hover .play-button{
+    height: 6rem;
+    width: 6rem;
+}
+
+.project-video .video-container .video-link{
+    position: absolute;
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* -----------------------------Services------------------------------------ */
+
+.services{
+    padding: 4rem;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-container .our-expertise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: baskerville, serif;
+}
+
+.services-container .our-expertise h3{
+    font-weight: bold;
+}
+
+.services-container .our-expertise .vertical-line{
+    height: 2rem;
+    border-right: 2px solid #E8E8EC;
+}
+
+.services-container .service-types-container {
+    width: 100%;
+
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.services-container .service-types-container .service-detail{
+    width: 47.5%;
+    line-height: 4rem;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+.services-container .service-types-container .service-detail img{
+    width: 100%;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.services-container .service-types-container .service-detail .image-container{
+    overflow: hidden;
+}
+
+.services-container .service-types-container .service-detail .image-container:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* --------------------------------Testimonials---------------------------------- */
+
+.testimonials{
+    padding: 4rem;
+}
+.testimonial-container{
+    background-color: #F3F5F9;
+    padding: 5rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.testimonial-container .testimonial-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-container .vertical-line{
+    height: 3rem;
+    width: 0;
+    border-right: 2px solid #E8E8EC;
+}
+.testimonial-container .clients-review{
+    width: 100%;
+}
+
+.testimonial-container .clients-review .clients-carousel{
+    width: 100%;
+    /* height: 35rem; */
+    padding: 0 6rem;
+    box-sizing: border-box;
+}
+
+.testimonial-container .clients-review .clients-carousel .carousel-inner .carousel-item{
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+    height: 35rem;
+
+}
+
+.testimonial-container .clients-review .clients-carousel img{
+    height: 5rem;
+    width: 5rem !important;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial-container .clients-review .clients-carousel p{
+    position: absolute;
+    top: 82.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial-container .clients-review .clients-carousel .carousel-indicators{
+    gap: 0.5rem;
+}
+
+.testimonial-container .clients-review .clients-carousel .carousel-indicators button{
+    height: 7.5px;
+    width: 7.5px;
+    background-color: #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ----------------------------Footer--------------------------------------- */
+
+.footer{
+    padding: 0rem 4rem 4rem;
+    height: 25rem;
+}
+
+.footer .div-1{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    border-bottom: 2px solid #E8E8EC;
+}
+
+.footer .div-1 .footer-elements{
+    width: 22.5%;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.footer .div-1 .footer-elements img{
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.footer .div-1 .footer-elements div i{
+    margin-right: 1rem;
+    scale: 1.25;
+}
+
+.footer .div-2{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .div-2 p span{
+    color: #0795FF;
+}
+
+
+
+/* *************************************************************************************************** */
+/* **********************************    Projects Page CSS   ***************************************** */
+/* *************************************************************************************************** */
+
+
+.projects-page-container{
+    padding: 10rem 4rem 2rem;
+}
+
+.projects-page-container h1{
+    font-family: concept regular;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.projects-page-container .projects-list{
+    margin-top: 4rem;
+}
+
+.projects-page-container .projects-list .project-details{
+    width: 47.5%;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+.projects-page-container .projects-list .project-details .image-container{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.projects-page-container .projects-list .project-details .image-container img{
+    width: 100%;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.projects-page-container .projects-list .project-details .image-container:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.projects-page-container .projects-list .project-details h5{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.projects-page-container .projects-list .project-details span{
+    padding: 1rem;
+}
+
+
+
+
+/* *************************************************************************************************** */
+/* **********************************    Contact Detail Page CSS   ***************************************** */
+/* *************************************************************************************************** */
+
+
+.contact-detail{
+    margin-top: 8rem;
+    padding: 6rem;
+    /* padding: 10rem 6rem;  */
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-detail a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.contact-detail a:hover{
+    color: black;
+}
+
+.contact-form-container{
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form-container .contact-form-details{
+    width: 47.5%;
+    padding: 2rem 8rem 2rem 2rem;
+}
+
+.contact-form-container .contact-form-details p{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form-container .contact-form{
+    padding: 2rem;
+    width: 50%;
+    /* height: 35rem; */
+    
+}
+
+.contact-form-container .contact-form .form-group{
+    position: relative;
+}
+
+.contact-form-container .contact-form input, .contact-form-container .contact-form select{
+    padding-top: 1.25rem;
+    border: none;
+    border-bottom: 1px solid #8C8D8E;
+    margin-bottom: 3rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.contact-form-container .contact-form label{
+    color: #8C8D8E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.contact-form-container .contact-form input:focus{
+    outline: none;
+    border-bottom: 1px solid #deecfd;
+}
+
+.contact-form-container .contact-form input::placeholder{
+    opacity: 0;
+}
+
+.contact-form-container .contact-form input:focus ~ label, .contact-form-container .contact-form input:not(:placeholder-shown) ~ label{
+    transform: translate(-12.5%,-50%) scale(0.75);
+    -webkit-transform: translate(-12.5%,-50%) scale(0.75);
+    -moz-transform: translate(-12.5%,-50%) scale(0.75);
+    -ms-transform: translate(-12.5%,-50%) scale(0.75);
+    -o-transform: translate(-12.5%,-50%) scale(0.75);
+}
+
+
+.contact-form .dropdown-input label{
+    opacity: 0;
+}
+
+.contact-form .dropdown-input select{
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.contact-form .dropdown-input select:first-child{
+    color: #8C8D8E;
+}
+
+.contact-form .dropdown-input select:focus{
+    outline: none;
+}
+
+
+.contact-form .dropdown-input select:has(:not(:first-child):checked){
+    color: #000000;
+}
+
+.contact-form .dropdown-input select{
+    color: #8C8D8E ;
+}
+
+
+.contact-form .dropdown-input label:has(~ select option:checked:not(:first-child)){
+    opacity: 1;
+    transform: scale(0.75) translate(-12.5%, -37.5%);
+    -webkit-transform: scale(0.75) translate(-12.5%, -37.5%);
+    -moz-transform: scale(0.75) translate(-12.5%, -37.5%);
+    -ms-transform: scale(0.75) translate(-12.5%, -37.5%);
+    -o-transform: scale(0.75) translate(-12.5%, -37.5%);
+} 
+
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form button{
+    margin-right: 3rem;
+    position: absolute;
+    right: 0;
+    border: none;
+    color: white;
+    background-color: black;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.contact-form form button:hover{
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,1);
+}
+
+
+
+
+/* ********************************About Page********************************** */
+
+
+
+
+.outside-container{
+    position: relative;
+    height: 225rem;
+}
+
+
+.outside-container .top-section{
+    background-color: #EAEAEA;
+    padding: 15rem 6rem 2rem;
+}
+
+.outside-container .top-section .col-6{
+    height: 17.5rem;
+}
+
+.outside-container .top-section .col-6 h1{
+    width: 100%;
+}
+
+.outside-container .top-section .col-6 span{
+    color: #666666;
+}
+
+.outside-container .top-section .col-6 img{
+    width: 120%;
+    display: block;
+}
+
+.outside-container .top-section .col-6 .image-container{
+    object-fit: fill;
+    width: 25rem;
+    margin-left: 5%;
+    margin-top: 10%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.sticky-div{
+    position: absolute;
+    display: block;
+    /* top: 20%; */
+    width: 70%;
+    left: 30%;
+    padding: 2rem 10rem;
+    background-color: white;
+    
+}
+.sticky-div .name{
+    color: #666666;
+}
+
+.sticky-div .name, .sticky-div .we-are{
+    line-height: 3.5rem;
+    transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+}
+
+
+.sticky-div .container .one, .container .two, .container .three, .container .four{
+    padding-top: 200px;
+    margin-bottom: -25%;
+    z-index: 0;
+}
+
+
+
+.sticky-div .container .one{
+    margin-top: 0;
+}
+.sticky-div .container-inner{
+    height: 80vh;
+    max-height: 50rem;
+}
+
+
+  .about-page-navbar{
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background-color: white ;
+  }
+
+
+
+.black-div{
+    margin-top: 2rem;
+    background-color: #000000;
+    color: white;
+    height: 40rem;
+    padding: 4rem 50% 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 99 !important;
+    position: relative;
+}
+
+.black-div h1{
+    letter-spacing: 0.25rem;
+
+    
+}
+
+.black-div h5{
+    line-height: 2rem;
+    
+}
+
+
+/*! ********************************About Page********************************** */
+
+
+
+
+
+/* ********************************Responsive********************************** */
+/* ********************************Responsive********************************** */
+/* ********************************Responsive********************************** */
+
+
+@media only screen and (min-width: 1500px){
+    .sticky-div .container .one, .container .two, .container .three, .container .four{
+        margin-bottom: -15%;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+    .outside-container .top-section .col-6 h1{
+        font-size: 1.75rem;
+    }
+
+    .outside-container{
+        height: 250rem;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    /* ****************Index Page***************** */
+
+    .projects-inner .projects-container .project-details .project-image-container{
+        height: 30rem;
+    }
+
+    .testimonial-container .clients-review .clients-carousel{
+        padding: 0rem;
+    }
+
+
+    .outside-container{
+        height: 260rem;
+    }
+
+    .outside-container .top-section .col-6 .image-container{
+        width: 20rem;
+    }
+
+    .footer{
+        padding: 0rem 1rem 4rem;
+        height: 25rem;
+    }
+}
+
+
+@media only screen and (max-width: 950px){
+    /* ****************Index Page***************** */
+
+    .home .home-text h1{
+        font-size: 3rem;
+    }
+
+    .about{
+        padding: 4rem 2rem;
+    }
+
+    .about .black-bg{
+        padding: 1rem 1rem;
+    }
+
+    .projects{
+        padding: 4rem 2rem 0;
+        
+    }
+
+    .projects-inner .projects-container .project-details .project-image-container{
+        height: 25rem;
+    }
+
+
+    .project-video{
+        padding: 0 2rem 4rem;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    .outside-container .top-section .col-6 h1{
+        font-size: 1.5rem;
+    }
+
+    .outside-container .top-section{
+        padding: 15rem 1.75rem 2rem;
+    }
+
+    .sticky-div{
+        padding: 2rem 4rem;
+    }
+    .black-div{
+        padding: 4rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    /* ****************Index Page***************** */
+    
+
+    .home .home-text{
+        left: 0;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .home .home-text h1{
+        font-size: 2rem;
+    }
+
+    .home .home-text h2{
+        width: 100%;
+    }
+
+    .about .black-bg .icons-div{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .projects-inner .projects-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services{
+        padding: 4rem 2rem;
+    }
+
+
+    .services-container .service-types-container{
+        flex-direction: column;
+    }
+
+    .services-container .service-types-container .service-detail{
+        width: 100%;
+    }
+
+    
+
+
+    .testimonial-container .clients-review .clients-carousel .carousel-inner .carousel-item{
+        padding: 4rem 1rem;
+    }
+
+
+
+    .testimonials{
+        padding: 4rem 0rem;
+    }
+
+
+
+
+    .testimonial-container .clients-review .clients-carousel .carousel-inner .carousel-item{
+        height: 50rem;
+        padding: 4rem 0;
+        font-size: 0.75rem;
+
+    }
+
+
+
+    .navbar{
+        padding: 2rem;
+    }
+
+    .outside-container{
+        height: 275rem;
+    }
+
+    .outside-container .top-section{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .outside-container .top-section .col-6{
+        width: 90%;
+        height: 27.5rem;
+    }
+
+    .outside-container .top-section .col-6 .image-container{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .outside-container .top-section .col-6 img{
+        width: auto;
+        height: 35rem;
+    }
+
+    .sticky-div{
+        left: 0;
+        width: 100%;
+    }
+
+    .black-div{
+        height: auto;
+    }
+
+    .footer .div-1{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .footer .div-1 .footer-elements{
+        width: 100%;
+    }
+
+    .footer .div-1 .footer-elements img{
+        height: 15rem;
+    }
+
+    .footer .div-2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    /* ****************Contact page************** */
+
+    .contact-form-container{
+        flex-direction: column;
+        margin-bottom: 7.5rem;
+        padding: 4rem 1rem;
+    }
+
+    .contact-form-container .contact-form, .contact-form-container .contact-form-details{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .contact-detail{
+        padding: 6rem 1rem;
+    }
+
+    .contact-detail a{
+        font-size: 2rem;
+    }
+
+    .contact-form form button{
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+    /* ****************Projects page************** */
+
+    .projects-page-container .projects-list{
+        flex-direction: column;
+    }
+    .projects-page-container .projects-list .project-details{
+        width: 100%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+
+    .about{
+        padding: 4rem 1rem;
+    }
+
+    .projects {
+        padding: 4rem 1rem 0;
+    }
+
+    .projects-inner{
+        padding: 4rem 1rem;
+    }
+
+    .projects-inner .projects-container .project-details .project-image-container{
+        height: 20rem;
+    }
+
+
+    .services{
+        padding: 4rem 1rem;
+    }
+
+
+
+    .navbar .navbar-brand img{
+        height: 3rem;
+    }
+
+    .sticky-div{
+        padding: 2rem;
+    }
+
+    /* ****************Projects page************** */
+
+    .projects-page-container{
+        padding: 10rem 2rem 2rem;
+    }
+}
+
+
+
+
+
+/*! ********************************Responsive********************************** */
+/*! ********************************Responsive********************************** */
+/*! ********************************Responsive********************************** */

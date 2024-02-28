@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+    <!-- ************************************* Css Stylesheet Link ************************************* -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ********************************Navbar******************************************* -->
+
+    <nav class="navbar  navbar-expand-lg other-page-navbar" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/White Logo.png" id="logo" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-list">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link" href="about-us.html">ABOUT</a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link " href="projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item text-light">
+                <a class="nav-link " href="contact-us.html">CONTACT</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <!-- ********************************Contact Details******************************************* -->
+
+      <div class="contact-detail">
+        <h1 class="heading">GET IN TOUCH</h1>
+        <a href="tel:+91 9904433466" class="contact-number">+91 99044 33466</a>
+        <a href="mailto:info@hcdesigns.in" class="email">info@hcdesigns.in</a>
+      </div>
+
+
+    <!-- ********************************Contact Form******************************************* -->
+
+    <div class="contact-form-container">
+        <div class="contact-form-details">
+          <h5>WRITE US</h5>
+          <p>413 Arista Business Space,
+            3, Sindhu Bhavan Marg,
+            Opp. HOF Showroom, Armieda,
+            PRL Colony, Bodakdev,
+            Ahmedabad, Gujarat 380054</p>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required placeholder="Phone Number" pattern="[0-9]{10}">
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required placeholder="Email ID" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+              <label for="email">Email ID</label>
+            </div>
+            <div class="form-group dropdown-input">
+              <label for="home-type">Home Type</label>
+              <select id="home-type" name="home-type" required>
+                <option value="" disabled selected>Select Home Type</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+              </select>
+            </div>
+            <div class="form-group dropdown-input">
+              <label for="home-size">Size of Home</label>
+              <select id="home-size" name="home-size" required>
+                <option value="" disabled selected>Select Size of Home</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input id="comment" name="comment" placeholder="Comment"></input>
+              <label for="comment">Comment</label>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
+
+
+    <!-- ************************************* Footer Section ************************************* -->
+
+    <div class="footer">
+        <div class="div-1">
+          <div class="footer-elements">
+            <img src="assets/White Logo.png" alt="">
+          </div>
+          <div class="footer-elements">
+            <h6>FIND US</h6>
+            <p>413 Arista Business Space, 3, Sindhu Bhavan Marg, Opp. HOF Showroom, Armieda, PRL Colony, Bodakdev, Ahmedabad, Gujarat 380054</p>
+          </div>
+          <div class="footer-elements">
+            <h6>CONTACT US</h6>
+            <p>+91 99044 33466</p>
+            <p>info@hcdesigns.in</p>
+          </div>
+          <div class="footer-elements">
+            <h6>FOLLOW US</h6>
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+        <div class="div-2">
+          <p>© HC INTERIOR & ARCHITECTURE 2024 | All Rights Reserved.</p>
+          <p>Powered by : <span>SAPTEZ</span></p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <!-- ************************************* Bootstrap javascript ************************************* -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- ************************************* FancyBox javascript ************************************* -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+    <!-- ************************************* Font Awesome javascript ************************************* -->
+    
+    <script src="https://kit.fontawesome.com/46fc7c2460.js" crossorigin="anonymous"></script>
+    
+    <!-- ************************************* JavaScript File ************************************* -->
+    <script src="app.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
